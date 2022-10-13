@@ -204,11 +204,6 @@ pub(crate) enum Event {
     MarkBlockCompletedRequest(MarkBlockCompletedRequest),
 }
 
-#[test]
-fn size_test(){
-    println!("Event size is {}",_STORAGE_EVENT_SIZE);
-    const_assert!(_STORAGE_EVENT_SIZE <= 96);
-}
 
 
 impl Display for Event {
